@@ -1,0 +1,20 @@
+<style>
+img {
+  width: 100%;
+  max-width: 500px;
+}
+
+figure {
+  padding-bottom: 20px;
+  border-width: 2px;
+  border-style: solid;
+}
+</style>
+<h1>Bumper Sticker Reply (singular)</h1>
+
+{% for pic in pics %}
+  <figure>
+    <img src="{{ pic.photo }}">
+    <figcaption>{{ pic.initial_comment }}</figcaption>
+  </figure>
+{% endfor %}

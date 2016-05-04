@@ -1,0 +1,4 @@
+Flask==0.10.1
+Flask-SQLAlchemy==2.0
+gevent==1.0.1
+gunicorn==19.3.0
