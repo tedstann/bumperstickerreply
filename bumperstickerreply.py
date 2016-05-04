@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.dialects.postgres import JSONB
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
-
+app.config['DEBUG'] = True
 try:
     import local_settings
     local_settings.setup(app)
